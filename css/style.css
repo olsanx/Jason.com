@@ -55,6 +55,13 @@ h4 {
    color: rgb(184, 165, 62);
 }
 
+hr {
+    width: 100%;
+    height: 0.2px;
+    border: none;
+    background-color: rgb(39, 37, 37);
+}
+
 p {
     font-family: "Montserrat", sans-serif;
     margin-bottom: 2rem;
@@ -223,6 +230,13 @@ nav {
     max-height: 30rem;
 }
 
+.header-hr {
+    width: 200%;
+    height: 0.2px;
+    border: none;
+    background-color: rgb(39, 37, 37);
+}
+
 .curtain-container {
     display: flex; /* Enable flexbox */
     justify-content: center; /* Center horizontally */
@@ -277,12 +291,7 @@ max-height: 30rem;
     width: 100%; /* Expand to full width when active */
 }
 
-hr {
-    width: 280%;
-    height: 0.2px;
-    border: none;
-    background-color: rgb(143, 140, 140);
-}
+
 
 #about-header {
     display: flex;
@@ -291,25 +300,13 @@ hr {
     margin-left: rem; /* Ensure it aligns with the left edge of the body */
     width: 100%; /* Adjust the width if needed */  
     max-width: 120rem;
-    margin-top: 2rem;
-}
-
-#quote {
-    display: flex;
-    justify-content: flex-end; /* Align to the left horizontally */
-    align-items: center; /* Center vertically if necessary */
-    margin-right: 3rem; /* Ensure it aligns with the left edge of the body */
-    width: 100%; /* Adjust the width if needed */  
-    max-width: 120rem;
-    margin-bottom: 3rem;
-    
+    margin: 2rem 0;
 }
 
 #about {
     display: flex;
     flex-direction: column;
     align-items: center;  
-    
     margin-bottom: 3rem;
 }
 
@@ -364,7 +361,7 @@ hr {
     font-weight: 500;
     font-size: .9rem;
     padding: .6rem 2rem;
-    border: 1px white solid;
+    border: 1px rgb(44, 42, 42) solid;
     border-radius: 1.7rem;
     cursor: pointer;
     transition: background-color 0.6s ease;
@@ -382,10 +379,45 @@ hr {
 }
 
 #work-section {
+    padding-top: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    max-width: 90rem;
+}
+
+.work-details {
+    display: flex;
+    padding: 4.5rem 0;
+    gap: 15rem;
+}
+
+.work-main h2 {
+    font-size: 2.4rem;
+    line-height: 3rem;
+    max-width: 35rem;
+    margin-bottom: 8rem;
+}
+
+.work-main h2:hover {
+    font-size: 2.5rem;
+    color: rgb(184, 165, 62);
+}
+
+.work-main p {
+    color: rgb(182, 182, 182);
+    font-weight: 500;
+    margin: 1rem 0;
+    max-width: 29rem;
+    font-size: .8rem;
+    line-height: 1.3rem;
+}
+
+
+
+.work-image {
+    max-width: 35rem;
+    max-height: 25rem;
+    border-radius: 1.3rem;
 }
 
 
@@ -441,6 +473,14 @@ hr {
     opacity: 1; 
 }
     */
+
+   
+
+    
+
+
+
+    
 
 
     
