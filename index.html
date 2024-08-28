@@ -12,7 +12,7 @@
     <nav class="navbar">
       <div class="logo">JASON</div>
       <div class="nav-right">
-        <button class="cv-button">Download CV</button>
+        <button id="cv-button" class="cv-button">Download CV</button>
         <div id="hamburger" class="hamburger" >
           <span></span>
           <span></span>
@@ -21,14 +21,12 @@
       </div>
       <ul class="nav-menu" id="nav-menu">
         <li><a href="#home">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#projects">WORK</a></li>
+        <li><a href="#about-header">ABOUT</a></li>
+        <li><a href="#work-section">WORK</a></li>
         <li><a href="#contact">CONTACT</a></li>
         <li><a href="#contact">POEMS</a></li>
-        <div>
-          <p>number</p>
-          <p>email</p>
-          <p>leggo</p>
+        <div class=" other-info"> 
+          
         </div>
       </ul>
     </nav>
@@ -38,8 +36,10 @@
         <h1>ADEKUNLE JASON <br> I WRITE</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero excepturi, atque suscipit ipsum iure eos non quia totam ad asperiores quis praesentium enim rerum sapiente recusandae a dignissimos debitis eligendi.</p>
         <ul class="socials">
-          <li></li>
-          <li></li>
+          <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href=""><i class="fa-brands fa-github"></i></a>
+          <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+          <a href="#contact"><i class="fa-regular fa-envelope"></i></a>
         </ul>
         
       </div>
@@ -83,7 +83,7 @@
         </div>
         <div class="xp-section" data-aos="fade-up">
           <div class="xp-container">
-            <h3>Web3 Content Writer and Affiliate</h3>
+            <h3>Web3 Content Writer and Affiliate.</h3>
             <h4>NODO</h4>
             <p>Here, I currently research and write up-to-date crypto blogs and articles. 
               I create content on crypto news, market predictions, and how-to articles. 
@@ -92,7 +92,7 @@
             </p>
           </div>
           <div class="xp-container">
-            <h3>SEO Content Editor</h3>
+            <h3>SEO Content Editor.</h3>
             <h4>KIDADL</h4>
             <p>I currently create and edit SEO-friendly content for Kidadl's website. 
               I write engaging and educational articles for children and parents,
@@ -101,7 +101,7 @@
             </p>
           </div>
           <div class="xp-container">
-            <h3>SEO Manager</h3>
+            <h3>SEO Manager.</h3>
             <h4>SOFHUB, LLC</h4>
             <p>Here I Managed on-page, off-page, and technical SEO for the company’s website,
               conducted keyword research, optimized website content and structure to improve SE rankings,
@@ -110,13 +110,47 @@
           </div>
         </div> 
         <div class="more-button">
-         <button class="more">More <i class="fa-solid fa-arrow-right"></i></button> 
+         <button id="more-button" class="more">More<i class="fa-solid fa-arrow-right"></i></button> 
         </div> 
       </div>
-      
     </section>
     <hr class="about-hr">
-
+        <section id="core-skills">
+      <div class="infinite-scroll-container">
+        <div class="infinite-scroll-content">
+          <span class="scroll-main">Search Engine Optimization</span>
+          <span class="scroll-main">Writing and Editing Digital</span>
+          <span class="scroll-main">Marketing</span>
+          <span class="scroll-main">Effective communication</span>
+          <span class="scroll-main">Research work</span>
+          <span class="scroll-main">Search Engine Optimization</span>
+          <span class="scroll-main">Writing and Editing Digital</span>
+          <span class="scroll-main">Marketing</span>
+          <span class="scroll-main">Effective communication</span>
+          <span class="scroll-main">Research work</span>
+          <span class="scroll-main">Search Engine Optimization</span>
+          <span class="scroll-main">Writing and Editing Digital</span>
+          <span class="scroll-main">Marketing</span>
+          <span class="scroll-main">Effective communication</span>
+          <span class="scroll-main">Research work</span>
+          <span class="scroll-main">Search Engine Optimization</span>
+          <span class="scroll-main">Writing and Editing Digital</span>
+          <span class="scroll-main">Marketing</span>
+          <span class="scroll-main">Effective communication</span>
+          <span class="scroll-main">Research work</span>
+          <span class="scroll-main">Search Engine Optimization</span>
+          <span class="scroll-main">Writing and Editing Digital</span>
+          <span class="scroll-main">Marketing</span>
+          <span class="scroll-main">Effective communication</span>
+          <span class="scroll-main">Research work</span>
+          <span class="scroll-main">Search Engine Optimization</span>
+          <span class="scroll-main">Writing and Editing Digital</span>
+          <span class="scroll-main">Marketing</span>
+          <span class="scroll-main">Effective communication</span>
+          <span class="scroll-main">Research work</span>
+        </div>
+      </div>
+    </section>
     <section id="work-section">
       <div class="work-heading" data-aos="flip-left">
         <h2>Selected Work</h2>
@@ -131,7 +165,9 @@
               technology and DeFi protocols to allow players to earn tokens that have real-world value
               from their in-game activities.</p>
           </div>
-          <img class="work-image" src="./assets/images/img1.jpg" alt="Game">
+          <div class="work-image-container">
+            <img class="work-image" src="./assets/images/img1.jpg" alt="Game" loading="lazy">
+          </div>
         </div>
         <hr>
 
@@ -143,7 +179,9 @@
               greenhouse gas emissions could harm the earth, our beloved home planet. This is a valid
               and relevant concern in our society today.</p>
           </div>
-          <img class="work-image" src="./assets/images/img2.jpg" alt="Green Coins">
+          <div class="work-image-container">
+            <img class="work-image" src="./assets/images/img2.jpg" alt="Green Coins" loading="lazy">
+          </div>
         </div>
         <hr>
 
@@ -157,7 +195,9 @@
               This equates to around 80 pounds per person, with only 15% of discarded clothing recycled or donated.
             </p>
           </div>
-          <img class="work-image" src="./assets/images/img3.jpg" alt="Placard">
+          <div class="work-image-container">
+            <img class="work-image" src="./assets/images/img3.jpg" alt="Placard" loading="lazy">
+          </div>
         </div>
         <hr>
 
@@ -170,7 +210,9 @@
               breathes life into African stories through its clothing, art, and lifestyle offerings.
             </p>
           </div>
-          <img class="work-image" src="./assets/images/img4.jpg" alt="African Fashion">
+          <div class="work-image-container">
+            <img class="work-image" src="./assets/images/img4.jpg" alt="African Fashion" loading="lazy">
+          </div>
         </div>
         <hr>
 
@@ -183,19 +225,45 @@
               That way, you become confident at troubleshooting and tackling technical issues on your Windows 10 PC.
             </p>
           </div>
-          <img class="work-image" src="./assets/images/img5.jpg" alt="Lady laying head on table in frustration">
+          <div class="work-image-container">
+            <img class="work-image" src="./assets/images/img5.jpg" alt="Lady laying head on table in frustration" loading="lazy">
           </div>
-
-      </div>
-
+        </div>
+        
     </section>
+    <hr>
 
-
-
-
-    <svg class="cursor" width="80" height="80" viewBox="0 0 80 80">
-      <circle class="cursor__inner" cx="40" cy="40" r="20"></circle>
-    </svg>
+    
+    <section id="contact" data-aos="fade-down">
+      <div class="message">
+        <h2 data-aos="fade-up">CONTACT</h2>
+        <p>Get in Touch and Let the Words Flow</p>
+      </div>
+      <div>
+        <form id="message-form">
+              <div class="form-flex">
+                  <div class="form-title">
+                      <label for="name">Your Name</label>
+                      <input type="text" id="name" name="name" required>
+                  </div>
+                  <div class="form-title"> 
+                      <label for="email">Email Address</label>
+                      <input type="email" id="email" name="email" required>
+                  </div>
+              </div>
+              <div class="form-title">
+                  <label for="message">Your Message</label>
+                  <textarea id="message" name="message" rows="1" required></textarea>
+              </div>
+              <button class="gft-button" type="submit">GO FOR IT</button>
+        </form>
+      </div>
+    </section>
+    <section id="footer">
+      <div>
+        
+      </div>
+    </section>
 
 <script src="./script.js"></script>
 <script src="https://kit.fontawesome.com/4ac61ee153.js" crossorigin="anonymous"></script>
@@ -207,4 +275,5 @@
   });
 </script>
 </body>
+
 </html>
