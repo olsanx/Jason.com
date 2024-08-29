@@ -325,10 +325,10 @@ max-height: 30rem;
 
 #about-header {
     display: flex;
-    justify-content: flex-start; /* Align to the left horizontally */
-    align-items: center; /* Center vertically if necessary */
-    margin-left: rem; /* Ensure it aligns with the left edge of the body */
-    width: 100%; /* Adjust the width if needed */  
+    justify-content: flex-start; 
+    align-items: center; 
+    margin-left: rem;
+    width: 100%;   
     max-width: 120rem;
     margin: 2rem 0;
 }
@@ -515,7 +515,11 @@ max-height: 30rem;
     align-items: center;
     text-align: center;
     width: 100%;
-    background-color: #0c0c0c;
+    background-color: #b69191;
+}
+
+.message {
+    width: 100%;
 }
 
 .message h2 {
@@ -634,7 +638,8 @@ input:-ms-autofill:active {
 }
 
 #footer {
-    background: #363535;
+   /* background: #363535;*/
+   background: #b69191;
     width: 100%;
 }
 

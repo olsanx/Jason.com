@@ -150,7 +150,16 @@
     }
     
     #core-skills {
-        max-width: 50rem;
+        max-width: 100%;
+    }
+
+    .work-details {
+      gap: 7rem;
+    }
+
+    .work-image-container {
+      max-width: 23rem;
+      max-height: 12rem;
     }
     
     .message h2 {
@@ -159,15 +168,16 @@
     }
 
     #message-form { 
-        padding: 1rem 2rem 0;
         width: 50rem;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 400;
     }
   }
 
   
   @media only screen and (max-width: 900px) {
+    nav {
+      gap: 25rem;
+    }
+
     .answer {
         padding: 0 2rem;
         line-height: 1.5rem;
@@ -218,12 +228,127 @@
         max-height: 10rem;
     }
 
+    .message h2 {
+      font-size: 11rem;
+      padding: 3rem 1rem;
+    }
+
+    #message-form { 
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 872px) {
+    h3 {
+      font-size: .88rem;
+    }
+
+    h4 {
+      font-size: .78rem;
+    }
+
+    .xp-section {
+      gap: .8rem;
+    }
+
+    .xp-container { 
+      padding: 0 .8rem;
+    }
+
+    .xp-container p {
+      font-size: .7rem;
+      line-height: 1.2rem;
+    }
+
+    .work-details {
+      gap: 5rem;
+    }
   }
 
+  @media only screen and (max-width: 782px) {
+    h3 {
+      font-size: .78rem;
+    }
+
+    h4 {
+      font-size: .68rem;
+    }
+
+    .xp-container p {
+      font-size: .65rem;
+      line-height: 1.15rem;
+    }
+  }
 
   @media only screen and (max-width: 768px) {
     nav {
-        gap: 25rem;
+      gap: 20rem;
+      width: 100%;
+    }
+    .cv-button {
+      font-size: .5rem;
+    }
+    .header-hr {
+      width: 120%;
+    }
+
+    .work-details {
+      gap: 4rem;
+    }
+
+    .work-main h2 {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .work-main p {
+      font-size: .6rem;
+      margin-bottom: .2rem;
+    }
+
+    .work-image-container {
+      max-width: 20rem;
+      max-height: 10rem;
+    }
+  }
+
+  @media only screen and (max-width: 721px) {
+    .xp-section {
+      display: flex;
+      flex-direction: column;
+    }
+
+    h3 {
+      font-size: 1rem;
+    }
+
+    h4 {
+      font-size: .8rem;
+      margin-bottom: .3rem;
+    }
+
+    .xp-container p {
+      font-size: .8rem;
+      line-height: 1.3rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  @media only screen and (max-width: 692px) {
+    .message h2 {
+      font-size: 8rem;
+    }
+
+    .nav{
+      gap: 12rem;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+    }
+
+    .cv-button {
+      font-size: .48rem;
     }
   }
 
