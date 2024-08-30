@@ -282,9 +282,8 @@ body.nav-menu-open {
 
 .curtain-image {
     margin-top: 3rem;
-
-max-width: 50rem;
-max-height: 30rem;
+    max-width: 50rem;
+    max-height: 30rem;
 }
 
 .curtain-container::before,
@@ -449,7 +448,6 @@ max-height: 30rem;
     transform: translateX(2px) translateY(-2px);
 }
 
-
 #work-section {
     padding-top: 2rem;
     display: flex;
@@ -515,7 +513,7 @@ max-height: 30rem;
     align-items: center;
     text-align: center;
     width: 100%;
-    background-color: #b69191;
+    background-color: #0c0c0c;
 }
 
 .message {
