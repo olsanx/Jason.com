@@ -263,6 +263,13 @@
     .work-details {
       gap: 5rem;
     }
+
+    .nav-menu {
+      pointer-events: none;
+    }
+    .nav-menu.open {
+      pointer-events: auto;
+    }
   }
 
   @media only screen and (max-width: 782px) {
@@ -284,6 +291,9 @@
     nav {
       gap: 20rem;
       width: 100%;
+    }
+    .cv-button {
+      font-size: .5rem;
     }
     .header-hr {
       width: 120%;
@@ -386,7 +396,9 @@
       font-size: 1.8rem;
     }
 
- 
+    .cv-button {
+      font-size: .48rem;
+    }
   }
 
   @media only screen and (max-width: 600px) {
@@ -394,7 +406,10 @@
       gap: 16rem;
     }
     
- 
+    .cv-button {
+      font-size: .6rem;
+      margin-right: .67rem;
+    }
 
     .header-hr {
       max-width: 100%;
@@ -453,7 +468,9 @@
       font-size: 1.3rem;
     }
 
-   
+    .cv-button {
+      padding: .4rem .6rem;
+    }
 
     .intro {
       padding-top: 1rem;
@@ -497,7 +514,10 @@
 
   @media only screen and (max-width: 380px) {
     /* Styles for screens up to 400px wide */
-  
+    .cv-button {
+      padding: .4rem .5rem;
+      font-size: .6rem;
+    }
     .intro {
       max-width: 20rem;
     }
@@ -524,7 +544,10 @@
       font-size: 1rem;
     }
     
-  
+    .cv-button {
+      padding: .4rem .5rem;
+      font-size: .5rem;
+    }
     .intro {
       max-width: 17rem;
     }
