@@ -60,7 +60,7 @@ animateScroll();
 const cvButton = document.getElementById('cv-button');
 const button2 = document.getElementById('more-button');
 
-cvButton.addEventListener('click', () => {
+cvButton.addEventListener('touchstart', () => {
   const link = document.createElement('a');
   link.href ='https://drive.google.com/uc?export=download&id=1h2QeuWLlSVPBYezUdbn2fjHBqz33T5tn';
   link.download = 'JasonsPortfolio.pdf';
