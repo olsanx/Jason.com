@@ -61,19 +61,10 @@ const cvButton = document.getElementById('cv-button');
 const button2 = document.getElementById('more-button');
 
 cvButton.addEventListener('click', () => {
-  const xhr = new XMLHttpRequest();
-  xhr.open('GET', 'https://drive.google.com/uc?export=download&id=1h2QeuWLlSVPBYezUdbn2fjHBqz33T5tn', true);
-  xhr.responseType = 'blob';
-  xhr.onload = function() {
-    if (xhr.status === 200) {
-      const blob = new Blob([xhr.response], { type: 'application/pdf' });
-      const link = document.createElement('a');
-      link.href = URL.createObjectURL(blob);
-      link.download = 'JasonsPortfolio.pdf';
-      link.click();
-    }
-  };
-  xhr.send();
+  const link = document.createElement('a');
+  link.href ='https://drive.google.com/uc?export=download&id=1h2QeuWLlSVPBYezUdbn2fjHBqz33T5tn';
+  link.download = 'JasonsPortfolio.pdf';
+  link.click();
 });
 
 button2.addEventListener('click', () => {
