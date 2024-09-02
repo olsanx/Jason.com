@@ -57,20 +57,23 @@ function animateScroll() {
 animateScroll();
 
 
-const cvButton = document.getElementById('cv-button');
-const button2 = document.getElementById('more-button');
-const cvLink = document.getElementById('cv-link');
 
-cvButton.addEventListener('click', () => {
-    const link = document.createElement('a');
-    link.href = 'https://drive.google.com/uc?export=download&id=1h2QeuWLlSVPBYezUdbn2fjHBqz33T5tn';
-    link.download = 'JasonsPortfolio.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    cvButton.addEventListener('click', () => {
-      cvLink.click();
+const button2 = document.getElementById('more-button');
+
+
+const navbar = document.querySelector('.navbar');
+
+navbar.addEventListener('click', (e) => {
+    if (e.target && e.target.id === 'cv-button') {
+        const link = document.createElement('a');
+        link.href = 'https://drive.google.com/uc?export=download&id=1h2QeuWLlSVPBYezUdbn2fjHBqz33T5tn';
+        link.download = 'JasonsPortfolio.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
 });
+
 
 
 
