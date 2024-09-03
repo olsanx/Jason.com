@@ -3,6 +3,12 @@
         gap: 50rem;
     }
 
+    .nav-menu.open {
+      top: 0;
+      opacity: 1;
+      padding: 1rem 26rem 25rem 5rem;
+    }
+
     #about-header h1 {
         margin-left: 2rem;
     }
@@ -88,6 +94,16 @@
   @media only screen and (max-width: 1028px) {
     nav {
         gap: 30rem;
+    }
+
+    .nav-menu.open {
+      top: 0;
+      opacity: 1;
+      padding: 4rem 16rem 29rem 1rem;
+    }
+
+    .nav-menu li {
+      font-size: 5rem;
     }
     
     .cv-button {
@@ -292,6 +308,23 @@
       gap: 20rem;
       width: 100%;
     }
+
+    .nav-menu {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+   }
+
+    .nav-menu.open {
+      top: 0;
+      opacity: 1;
+      padding: 4rem 2rem 20rem 1rem;
+    }
+
+    .nav-menu li {
+      font-size: 5rem;
+    }
+
     .cv-button {
       font-size: .5rem;
     }
@@ -457,13 +490,26 @@
       font-size: 8rem;
       letter-spacing: 0;
     }
+
   }
 
   @media only screen and (max-width: 430px) {
     nav{
       gap: 8rem;
     }
-
+    .nav-menu {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+    }
+    .nav-menu.open {
+      top: -2%;
+      opacity: 1;
+      padding: 4rem 1rem 20rem 1rem;
+    }
+    .nav-menu li {
+      font-size: 5rem;
+    }
     .logo {
       font-size: 1.3rem;
     }
@@ -534,12 +580,53 @@
     .message h2 {
       font-size: 6rem;
     }
+
+    #footer {
+      padding: 2rem;
+    }
+
+    .footer-logo {
+      font-size: 3rem;
+    }
+
+   .catchphrase {
+      margin-bottom: 1rem;
+      font-size: .6rem;
+    }
+
+    .social-links {
+      margin-top: 1rem;
+    }
+    
+    .social-links a {
+      margin-right: .4rem;
+      font-size: 1rem;
+    }
+    
+    .copyright {
+      font-size: .6rem;
+    }
+  
   }
 
   @media only screen and (max-width: 330px) {
     nav {
       gap: 6.5rem;
     }
+    .nav-menu {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+    }
+    .nav-menu.open {
+      top: -2%;
+      opacity: 1;
+      padding: 4rem 1rem 20rem 1rem;
+    }
+    .nav-menu li {
+      font-size: 4.5rem;
+    }
+
     .logo {
       font-size: 1rem;
     }
