@@ -1,4 +1,6 @@
-               /*HAMBURGER NAV*/
+
+
+                /*HAMBURGER NAV*/
 
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('nav-menu');
@@ -56,7 +58,7 @@ function animateScroll() {
 
 animateScroll();
 
-
+                /*cv-download*/
 const cvButton = document.getElementById('cv-button');
 const button2 = document.getElementById('more-button');
 
@@ -76,4 +78,36 @@ button2.addEventListener('click', () => {
 })
 
 
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('message-form');
+
+  form.addEventListener('submit', (event) => {
+      event.preventDefault();
+
+      emailjs.sendForm('service_u1xnleh', 'template_rkfo3kp', form)
+          .then((response) => {
+              console.log('SUCCESS!', response.status, response.text);
+              alert('Thank you for your message!');
+              form.reset();
+          }, (error) => {
+              console.log('FAILED...', error);
+              alert('Failed to send the message. Please try again later.');
+          });
+  });
+});
+
+
+const comingSoonText = document.querySelector('.coming-soon-container h1');
+const textToType = 'Coming Soon...';
+let typingIndex = 0;
+
+function typeText() {
+  if (typingIndex < textToType.length) {
+    comingSoonText.textContent += textToType[typingIndex];
+    typingIndex++;
+    setTimeout(typeText, 100); 
+  }
+}
+
+typeText();
 

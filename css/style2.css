@@ -1,0 +1,18 @@
+body {
+  background-color: #F5F5DC; 
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.coming-soon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  font-size: 98px;
+  color: #333;
+}

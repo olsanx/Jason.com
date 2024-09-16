@@ -269,16 +269,16 @@ body.nav-menu-open {
 }
 
 .curtain-container {
-    display: flex; /* Enable flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
     position: relative;
-    width: 30%; /* Start at 30% width */
+    width: 30%; 
     max-width: 30rem;
     height: auto;
     overflow: hidden;
-    opacity: 1; /* Fully visible on load */
-    transition: width 0.8s ease-in-out; /* Transition for expanding effect */
+    opacity: 1; 
+    transition: width 0.8s ease-in-out; 
 }
 
 .curtain-image {
@@ -296,7 +296,7 @@ body.nav-menu-open {
     height: 100%;
     background-color: #000;
     z-index: 2;
-    transition: transform 1.5s ease; /* Curtain opening animation */
+    transition: transform 1.5s ease; 
 }
 
 .curtain-container::before {
@@ -310,15 +310,15 @@ body.nav-menu-open {
 }
 
 .curtain-container.active::before {
-    transform: translateX(-100%); /* Curtain moves left */
+    transform: translateX(-100%); 
 }
 
 .curtain-container.active::after {
-    transform: translateX(100%); /* Curtain moves right */
+    transform: translateX(100%); 
 }
 
 .curtain-container.active {
-    width: 100%; /* Expand to full width when active */
+    width: 100%; 
 }
 
 
@@ -462,6 +462,10 @@ body.nav-menu-open {
     gap: 15rem;
 }
 
+.work-main a {
+  text-decoration: none;
+}
+
 .work-main h2 {
     font-size: 2.4rem;
     line-height: 3rem;
@@ -557,7 +561,7 @@ body.nav-menu-open {
 }
 
 .form-title:hover {
-    color: #a3874c; /* changed to a darker gold */
+    color: #a3874c; 
 }
 
 .form-title {
@@ -565,7 +569,7 @@ body.nav-menu-open {
     text-align: left;
     position: relative;
     font-size: .78rem;
-    color: #fff; /* changed to white */
+    color: #fff; 
 }
 
 .form-title label {
@@ -578,16 +582,16 @@ textarea {
     width: 100%;
     padding: .3rem 0;
     border: none;
-    border-bottom: 1px solid #333; /* changed to a darker gray */
+    border-bottom: 1px solid #333; 
     font-size: .8rem;
     outline: none;
-    background-color: #0c0c0c; /* changed to black */
-    color: #fff; /* changed to white */
+    background-color: #0c0c0c; 
+    color: #fff; 
 }
 
 .form-title input:focus, 
 textarea:focus {
-    border-bottom: 0.1px solid #a3874c; /* changed to a darker gold */
+    border-bottom: 0.1px solid #a3874c; 
 }
 
 .gft-button {
@@ -705,57 +709,6 @@ input:-ms-autofill:active {
     font-weight: 400;
 }
 
-/*
-.curtain-container {
-    position: relative;
-    max-width: 40rem;
-    height: auto;
-    overflow: hidden;
-    opacity: 0; 
-    transition: opacity 0.5s ease-in-out; 
-}
-
-.curtain-image {
-    margin-top: 3rem;
-   
-    max-width: 50rem;
-    max-height: 30rem;
-}
-
-.curtain-container::before,
-.curtain-container::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 10%;
-    height: 100%;
-    background-color: #000;
-    z-index: 2;
-    transition: transform 1.5s ease; 
-}
-
-.curtain-container::before {
-    left: 0;
-    transform: translateX(0);
-}
-
-.curtain-container::after {
-    right: 0;
-    transform: translateX(0);
-}
-
-.curtain-container.active::before {
-    transform: translateX(-100%); 
-}
-
-.curtain-container.active::after {
-    transform: translateX(100%); 
-}
-
-.curtain-container.active {
-    opacity: 1; 
-}
-    */
 
    
 
