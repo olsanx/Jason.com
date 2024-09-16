@@ -1,6 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Righteous&display=swap');
+
+
 body {
   background-color: #F5F5DC; 
-  font-family: Arial, sans-serif;
+  font-family: "Anton SC", sans-serif;
+  font-weight: 400;
+  font-size: 2.7rem;
+  line-height: 5.5rem;
+  letter-spacing: .3rem;
   text-align: center;
 }
 
@@ -13,6 +20,5 @@ body {
 }
 
 h1 {
-  font-size: 98px;
   color: #333;
 }
