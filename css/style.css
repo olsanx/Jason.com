@@ -273,8 +273,8 @@ body.nav-menu-open {
     justify-content: center; 
     align-items: center; 
     position: relative;
-    width: 30%; 
-    max-width: 30rem;
+    width: 50%; 
+    max-width: 35rem;
     height: auto;
     overflow: hidden;
     opacity: 1; 
@@ -283,8 +283,8 @@ body.nav-menu-open {
 
 .curtain-image {
     margin-top: 3rem;
-    max-width: 50rem;
-    max-height: 30rem;
+    max-width: 60rem;
+    max-height: 40rem;
 }
 
 .curtain-container::before,
